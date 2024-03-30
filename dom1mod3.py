@@ -7,4 +7,4 @@ def get_days_from_today(date_of_war):
     return delta.days
 date_of_war = '2022-02-24'
 defference = get_days_from_today(date_of_war)
-print(defference)
+print(f"Від початку вторгнення расії в Україну пройшло днів {defference}")
