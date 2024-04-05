@@ -1,6 +1,11 @@
 import random
 
 def get_numbers_ticket(min, max, quantity):
+    
+    if min < 1 or max > 49 or quantity != 6:
+        print("Параметри не коректні!")
+        return None
+    
     numbers = set()
     while len(numbers) < quantity:
         numbers.add(random.randint(min, max))
