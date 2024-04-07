@@ -2,7 +2,7 @@ import random
 
 def get_numbers_ticket(min, max, quantity):
     
-    if min < 1 or max >= 1001 or quantity != 6:
+    if max - min + 1 < quantity:
         print("Параметри не коректні!")
         return None
     
@@ -11,5 +11,7 @@ def get_numbers_ticket(min, max, quantity):
         numbers.add(random.randint(min, max))
     return list(numbers)
 
-lottery_numbers = get_numbers_ticket(1, 777, 6)
+lottery_numbers = get_numbers_ticket(1, 98, 12)
 print("Ваші лотерейні числа:", lottery_numbers)
+
+# надіюся це вже буде правильно ... надіюся)))
